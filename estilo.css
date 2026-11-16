@@ -663,3 +663,278 @@ body.pagina-interna {
   font-size: 13px;
   color: #aaaaaa;
 }
+/* =========================================
+   CINEBIT - PÁGINA SOBRE NOSOTROS
+   ========================================= */
+
+/* Contenedor principal */
+.sobre-cinebit {
+  max-width: 1050px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+/* ===== PRESENTACIÓN ===== */
+
+.sobre-presentacion {
+  background: var(--rojo-oscuro);
+  border: 4px solid #000;
+  border-radius: 10px;
+  padding: 35px 40px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.sobre-presentacion h1 {
+  font-family: "Graduate", Impact, serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 3px 3px 0 #000;
+  margin: 0 0 20px;
+}
+
+.sobre-eslogan {
+  color: var(--dorado);
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sobre-presentacion p {
+  line-height: 1.8;
+}
+
+.sobre-presentacion p:last-child {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ===== FUNCIONALIDADES ===== */
+
+.sobre-funciones {
+  margin-bottom: 45px;
+}
+
+.sobre-funciones h2 {
+  color: var(--crema);
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+/* Cuadrícula de tarjetas */
+.funciones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas individuales */
+.funcion-tarjeta {
+  background: var(--rojo-oscuro);
+  border: 4px solid #000;
+  border-radius: 10px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+/* Animación al pasar el mouse */
+.funcion-tarjeta:hover {
+  transform: translateY(-5px);
+  border-color: var(--dorado);
+}
+
+/* Iconos */
+.funcion-icono {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* Títulos de tarjetas */
+.funcion-tarjeta h3 {
+  color: var(--dorado);
+  font-size: 1.15rem;
+  margin: 0 0 12px;
+}
+
+/* Descripciones */
+.funcion-tarjeta p {
+  color: var(--crema);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== QUIÉNES SOMOS ===== */
+
+.sobre-equipo {
+  background: var(--rojo-oscuro);
+  border: 4px solid #000;
+  border-radius: 10px;
+  padding: 35px 30px;
+  margin-bottom: 30px;
+}
+
+.sobre-equipo h2 {
+  color: #fff;
+  margin: 0 0 25px;
+}
+
+.equipo-descripcion {
+  max-width: 780px;
+  margin: 0 auto 15px;
+  line-height: 1.8;
+  color: var(--crema);
+}
+
+/* Destacar palabras importantes */
+.equipo-descripcion strong {
+  color: var(--dorado);
+}
+
+/* Título de integrantes */
+.sobre-equipo h3 {
+  color: var(--dorado);
+  font-family: "Graduate", Impact, serif;
+  letter-spacing: 2px;
+  margin: 35px 0 25px;
+  padding-top: 25px;
+  border-top: 2px solid var(--rojo);
+}
+
+/* Distribución de integrantes */
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+/* Tarjeta de cada integrante */
+.integrante {
+  background: var(--fondo);
+  border: 2px solid var(--rojo);
+  border-radius: 8px;
+  padding: 20px 12px;
+  transition: border-color 0.3s;
+}
+
+.integrante:hover {
+  border-color: var(--dorado);
+}
+
+.integrante h4 {
+  color: var(--crema);
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+
+.integrante p {
+  color: var(--dorado);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ===== BOTÓN VOLVER ===== */
+
+.sobre-volver {
+  display: inline-block;
+  background: var(--rojo);
+  color: var(--crema);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sobre-volver:hover {
+  background: var(--dorado);
+  color: #000;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 800px) {
+  .integrantes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-presentacion,
+  .sobre-equipo {
+    padding: 25px 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .sobre-cinebit {
+    margin: 25px auto;
+    padding: 0 5px;
+  }
+
+  .funciones-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .funcion-tarjeta {
+    padding: 22px 15px;
+  }
+
+  .sobre-presentacion h1 {
+    font-size: 1.7rem;
+  }
+
+  .sobre-funciones h2,
+  .sobre-equipo h2 {
+    font-size: 1.2rem;
+  }
+}
+/* ===== AVATARES DEL EQUIPO CINEBIT ===== */
+
+.avatar-equipo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--dorado);
+  background: var(--fondo);
+  margin: 15px auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.avatar-equipo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(255, 199, 0, 0.45);
+}
+
+/* Centrar el contenido de cada tarjeta */
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+/* Nombre encima del avatar */
+.integrante h4 {
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+  .avatar-equipo {
+    width: 130px;
+    height: 130px;
+  }
+}

@@ -1,291 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo Completo - CineBit</title>
-  <link rel="stylesheet" href="estilo.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+
   <!-- Flecha superior: siempre visible y devuelve al menú principal, sin borrar los enlaces inferiores. -->
   <a class="volver-inicio-superior" href="index.html" aria-label="Volver al menú principal">
     <span aria-hidden="true">←</span> Inicio
   </a>
 
-  <!-- Encabezado -->  
-  <header class="encabezado">
+  <title>Sobre CineBit</title>
 
-    <!-- Barra de búsqueda y filtros de género -->
-        <nav class = "barra" >
-    <input type = "search" id = "inputBusqueda" placeholder="Buscar...">
-    <select id = "selectGenero">
-        <option value = "todos">Todos</option>
-        <option value = "accion">Accion</option>
-        <option value = "fantasia">Fantasia</option>
-        <option value = "suspenso">Suspenso</option>
-        <option value = "comedia">Comedia</option>
-        <option value="terror">Terror</option> <!-- Filtro de terror. -->
-        <option value="aventura">Aventura</option> <!-- Filtro de aventura. -->
-        <option value="animacion">Animación</option> <!-- Filtro de animación. -->
-        <option value="cienciaficcion">Ciencia ficción</option> <!-- Filtro de ciencia ficción. -->
-        <option value="drama">Drama</option> <!-- Filtro de drama. -->
-        <option value="musical">Musical</option> <!-- Filtro de musical. -->
-        <option value="romance">Romance</option> <!-- Filtro de romance. -->
-    </select>
-    </nav>
-    </header>
-    
-    <main class="contenedor-principal">
-        <main class="contenedor-principal">
-            <!-- Películas animadas y familiares -->
-             <section class="bloque-genero" data-seccion-genero="animacion">
-                <h2 class="titulo-genero">Animación</h2>
-                <div class="grid-genero">
+  <!-- Tipografía cinematográfica -->
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 
-                    <!-- Shrek -->
-                    <article class ="tarjeta-pelicula" data-titulo="shrek" data-genero="animacion comedia fantasia">
-                        <a href="shrek.html">
-                            <div class="caja-poster">
-                                <img src ="https://m.media-amazon.com/images/M/MV5BN2FkMTRkNTUtYTI0NC00ZjI4LWI5MzUtMDFmOGY0NmU2OGY1XkEyXkFqcGc@._V1_.jpg" alt="Shrek">
-                            </div>
-                            <div class="info-pelicula">
-                                <h3>Shrek</h3>
-                                <span class="año">2001</span>
-                            </div>
-                        </a>
-                    </article>
+  <!-- CSS original de CineBit -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
 
-             <!-- Papoi -->
-             <article class="tarjeta-pelicula" data-titulo="minions nace un villano" data-genero="animacion comedia accion">
-                <a href="minion.html">
-                <div class="caja-poster">
-                    <img src="https://m.media-amazon.com/images/I/81ffeOxg3gL._AC_UF1000,1000_QL80_.jpg" alt="Minions">
-                </div>
-                <div class="info-pelicula">
-                    <h3>Minions: Nace un villano</h3>
-                    <span class="año">2022</span>
-                </div>
-                </a>
-             </article>
+<body>
 
-             <!-- Coraline -->
-      <article class="tarjeta-pelicula" data-titulo="coraline y la puerta secreta" data-genero="animacion fantasia terror">
-                <a href="coraline.html">
-                <div class="caja-poster">
-                    <img src="https://cdn.posteritati.com/posters/000/000/053/066/coraline-md-web.jpg" alt="Portada de Coraline y la puerta secreta">
-                </div>
-                <div class="info-pelicula">
-                    <h3>Coraline</h3>
-                    <span class="año">2009</span>
-                </div>
-                </a>
-             </article>
+  <main class="sobre-cinebit">
 
-             <!-- Alicia - 2010 -->
-      <article class="tarjeta-pelicula" data-titulo="alicia en el país de las maravillas" data-genero="animacion fantasia">
-                <a href="alicia-2010.html">
-                <div class="caja-poster">
-                    <img src="https://cdn.t3pedia.org/media/uploads/2025/10/07/3e81veEau7udzxBr173z396EdSJAwdIl.jpg" alt="Portada de Alicia en el país de las maravillas">
-                </div>
-                <div class="info-pelicula">
-                    <h3>Alicia en el país de las maravillas</h3>
-                    <span class="año">2010</span>
-                </div>
-                </a>
-             </article>
+    <!-- PRESENTACIÓN -->
+    <section class="sobre-presentacion">
+      <h1>SOBRE CINEBIT</h1>
 
-             <!-- Spiderman -->
-      <article class="tarjeta-pelicula" data-titulo="spiderman spider-verso" data-genero="animacion fantasia accion">
-                <a href="spiderman-spider-verso.html".html">
-                <div class="caja-poster">
-                    <img src="https://pixieposters.co.uk/cdn/shop/files/spiderman_14_-gigapixel-standard-height-2480px.jpg?v=1714059878" alt="Portada de Spider-Man: A través del Spider-Verso">
-                </div>
-                <div class="info-pelicula">
-                    <h3>Spider-Man: A través del Spider-Verso</h3>
-                    <span class="año">2023</span>
-                </div>
-                </a>
-             </article>
-    </div>
-  </section>
+      <p class="sobre-eslogan">
+        Tu espacio para descubrir, valorar y compartir el cine.
+      </p>
 
-  <!-- Sección: Terror y Suspenso -->
-  <section class="bloque-genero" data-seccion-genero="terror">
-    <h2 class="titulo-genero">Terror y Suspenso</h2>
-    <div class="grid-genero">
+      <p>
+        CineBit es una plataforma web dedicada a los amantes
+        del cine, donde puedes explorar películas, compartir
+        opiniones y descubrir nuevas historias a través
+        de las reseñas de nuestra comunidad.
+      </p>
+    </section>
 
-      <!-- Viernes 13 -->
-      <article class="tarjeta-pelicula" data-titulo="viernes 13" data-genero="terror suspenso" data-edad="18">
-        <a href="viernes13.html">
-          <div class="caja-poster">
-            <span class="badge-18">+18</span>
-            <img src="https://cdn.posteritati.com/posters/000/000/059/931/friday-the-13th-md-web.jpg" alt="Portada de Viernes 13">
-          </div>
-          <div class="info-pelicula">
-            <h3>Viernes 13</h3>
-            <span class="año">1980</span>
-          </div>
-        </a>
-      </article>
+    <!-- FUNCIONALIDADES -->
+    <section class="sobre-funciones">
 
-      <!-- It  -->
-      <article class="tarjeta-pelicula" data-titulo="it" data-genero="terror suspenso">
-        <a href="it.html">
-          <div class="caja-poster">
-            <span class="badge-18">+18</span>
-            <img src="https://cdn.posteritati.com/posters/000/000/053/969/it-md-web.jpg" alt="Portada de It">
-          </div>
-          <div class="info-pelicula">
-            <h3>It (Eso)</h3>
-            <span class="año">2017</span>
-          </div>
-        </a>
-      </article>
+      <h2>¿QUÉ PUEDES HACER EN CINEBIT?</h2>
 
-      <!-- Resident Evil  -->
-      <article class="tarjeta-pelicula" data-titulo="resident-evil" data-genero="terror suspenso">
-        <a href="resident-evil.html">
-          <div class="caja-poster">
-            <span class="badge-18">+14</span>
-            <img src="https://resizing.flixster.com/8UjdqEXuMDD1Pvo-66b2KeHxL1g%3D/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzczNjk4OThmLTZjNmUtNGRkMC1hNDM0LTA3N2IyNTJlNGNiNy5qcGc%3D" alt="Portada de Resident Evil">
-          </div>
-          <div class="info-pelicula">
-            <h3>Resident Evil</h3>
-            <span class="año">2026</span>
-          </div>
-        </a>
-      </article>
+      <div class="funciones-grid">
 
-      <!-- Obsession  -->
-      <article class="tarjeta-pelicula" data-titulo="obsesion" data-genero="terror suspenso romance">
-        <a href="obsesion.html">
-          <div class="caja-poster">
-            <span class="badge-18">+18</span>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HI8WEI0u2Q5y7nJt-S6UvaKRuOKBzopAZu2hHT4vKO0JEvnxXM501bA&s=10" alt="Portada de Obsesión">
-          </div>
-          <div class="info-pelicula">
-            <h3>Obsesión</h3>
-            <span class="año">2025</span>
-          </div>
-        </a>
-      </article>
+        <article class="funcion-tarjeta">
+          <span class="funcion-icono">🎬</span>
+          <h3>Explorar películas</h3>
+          <p>
+            Descubre diferentes películas y conoce
+            sus historias, géneros y características.
+          </p>
+        </article>
 
-    </div>
-  </section>
+        <article class="funcion-tarjeta">
+          <span class="funcion-icono">⭐</span>
+          <h3>Valorar películas</h3>
+          <p>
+            Comparte tus puntuaciones y conoce
+            las valoraciones de la comunidad.
+          </p>
+        </article>
 
-  <!-- Sección: Acción y Ciencia Ficción -->
-  <section class="bloque-genero" data-seccion-genero="accion">
-    <h2 class="titulo-genero">Acción y Ciencia Ficción</h2>
-    <div class="grid-genero">
+        <article class="funcion-tarjeta">
+          <span class="funcion-icono">💬</span>
+          <h3>Escribir reseñas</h3>
+          <p>
+            Expresa tus opiniones y descubre
+            qué piensan otros usuarios.
+          </p>
+        </article>
 
-      <!-- Jurassic Park -->
-      <article class="tarjeta-pelicula" data-titulo="jurassic park" data-genero="accion cienciaficcion aventura">
-        <a href="jurassic-park.html">
-          <div class="caja-poster">
-            <span class="badget-genero">Acción</span>
-            <img src="https://www.posterpalace.com/cdn/shop/products/jurassic-park-us-one-sheet-1993-original-release-posterpalacecom-228589.jpg?v=1671388294&amp;width=1946" alt="Portada de Jurassic Park">
-          </div>
-          <div class="info-pelicula">
-            <h3>Jurassic Park</h3>
-            <span class="año">1993</span>
-          </div>
-        </a>
-      </article>
+        <article class="funcion-tarjeta">
+          <span class="funcion-icono">🍿</span>
+          <h3>Ver tráilers</h3>
+          <p>
+            Disfruta de avances cinematográficos
+            antes de elegir tu próxima película.
+          </p>
+        </article>
 
-      <!-- Spiderman -->
-      <article class="tarjeta-pelicula" data-titulo="spiderman spider-verso" data-genero="animacion fantasia accion">
-                <a href="spiderman-spider-verso.html".html">
-                <div class="caja-poster">
-                    <img src="https://pixieposters.co.uk/cdn/shop/files/spiderman_14_-gigapixel-standard-height-2480px.jpg?v=1714059878" alt="Portada de Spider-Man: A través del Spider-Verso">
-                </div>
-                <div class="info-pelicula">
-                    <h3>Spider-Man: A través del Spider-Verso</h3>
-                    <span class="año">2023</span>
-                </div>
-                </a>
-             </article>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Sección: Comedia -->
-   <section class="bloque-genero" data-seccion-genero="comedia">
-    <h2 class="titulo-genero">Comedia</h2>
-    <div class="grid-genero">
+    <!-- EQUIPO -->
+    <section class="sobre-equipo">
 
-      <!-- Son como niños -->
-      <article class="tarjeta-pelicula" data-titulo="son como niños" data-genero="comedia">
-                <a href="spiderman-spider-verso.html".html">
-                <div class="caja-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMjA0ODYwNzU5Nl5BMl5BanBnXkFtZTcwNTI1MTgxMw%40%40._V1_.jpg" alt="Portada de Son como niños"> 
-                <div class="info-pelicula">
-                    <h3>Son como niños</h3>
-                    <span class="año">2010</span>
-                </div>
-                </a>
-             </article>
-    </div>
-  </section>
+      <h2>¿QUIÉNES SOMOS?</h2>
 
-   <!-- Sección: Romance -->
-   <section class="bloque-genero" data-seccion-genero="comedia">
-    <h2 class="titulo-genero">Comedia</h2>
-    <div class="grid-genero">
+      <p class="equipo-descripcion">
+        Somos un equipo de <strong>estudiantes universitarios</strong>
+        comprometidos por la tecnología, el desarrollo web
+        y el mundo del cine.
+      </p>
 
-      <!-- Son como niños -->
-      <article class="tarjeta-pelicula" data-titulo="son como niños" data-genero="comedia">
-                <a href="spiderman-spider-verso.html".html">
-                <div class="caja-poster">
-                    <img src="https://m.media-amazon.com/images/M/MV5BMjA0ODYwNzU5Nl5BMl5BanBnXkFtZTcwNTI1MTgxMw%40%40._V1_.jpg" alt="Portada de Son como niños"> 
-                <div class="info-pelicula">
-                    <h3>Son como niños</h3>
-                    <span class="año">2010</span>
-                </div>
-                </a>
-             </article>
-    </div>
-  </section>
+      <p class="equipo-descripcion">
+        CineBit nació como un proyecto académico
+        para aplicar nuestros conocimientos de
+        programación y diseño web, creando un
+        espacio donde cada opinión cuenta.
+      </p>
 
+      <h3>NUESTRO EQUIPO</h3>
 
+     <div class="integrantes-grid">
 
-  <p id="mensajeVacio" class="mensaje-vacio" hidden>No se encontraron películas en esta categoría.</p>
-</main>
+  <!-- MILLARAY -->
+  <div class="integrante">
+    <h4>Millaray Quintrileo</h4>
 
-    <footer class ="pie-pagina">
-        <a href = "about.html">Más información sobre la página</a>
-        <p>&copy; 2026 CineBit — Películas Épicas</p>
-    </footer>
+    <img
+      src="imagenes/avatar-millaray.png"
+      alt="Avatar de Millaray"
+      class="avatar-equipo"
+    >
 
-    <!-- Filtrado de películas -->
-    <script>
-        const inputBusqueda = document.getElementById("inputBusqueda");
-        const selectGenero = document.getElementById("selectGenero");
-        const tarjetas = document.querySelectorAll(".tarjeta");
-        const mensajeVacio =document.getElementById("mensajeVacio");
+    <p>Equipo de desarrollo</p>
+  </div>
 
-        function filtrarCatalogo(){
-            const texto = inputBusqueda.value.toLowerCase().trim();
-            const genero = selectGenero.value.toLowerCase();
-            let visibles = 0;
-            tarjetas.forEach(tarjeta =>{
-                const titulo = tarjeta.getAttribute("data-titulo") ? tarjeta.getAttribute("data-titulo").toLocaleLowerCase(): "";
-                const generos = tarjeta.getAttribute("data-genero") ? tarjeta.getAttribute("data-genero").toLocaleLowerCase(): "";
-                const coincideTexto = titulo.includes(texto);
-                const coincideGenero = genero ==="todos" || generos.includes(genero);
-                if(coincideTexto && coincideGenero){
-                    tarjeta.classList.remove("oculto");
-                    visibles++;
-                }else{
-                    tarjeta.classList.add("oculto");
-                }
-            }
-            );
-            mensajeVacio.hidden = visibles > 0;
-        }
-        inputBusqueda.addEventListener("input", filtrarCatalogo);
-        selectGenero.addEventListener("change", filtrarCatalogo);
-    </script>
+  <!-- BENJAMÍN -->
+  <div class="integrante">
+    <h4>Benjamín Corvalán</h4>
+
+    <img
+      src="imagenes/avatar-benjamin.png"
+      alt="Avatar de Benjamín"
+      class="avatar-equipo"
+    >
+
+    <p>Equipo de desarrollo</p>
+  </div>
+
+  <!-- CONSTANZA -->
+  <div class="integrante">
+    <h4>Constanza Aguayo</h4>
+
+    <img
+      src="imagenes/avatar-constanza.png"
+      alt="Avatar de Constanza"
+      class="avatar-equipo"
+    >
+
+    <p>Equipo de desarrollo</p>
+  </div>
+
+</div>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
